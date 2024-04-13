@@ -1,6 +1,8 @@
 # 說明文件
+必要安裝 : 
+PHP : https://windows.php.net/download/
 
-1.於專案根目錄執行 php -S localhost:8000 -t public 啟動伺服器.
+1.於專案根目錄/public 執行 php -S localhost:8000  啟動伺服器.
 
 2.api路由 http://localhost:8000/calculator ，方法POST.
 

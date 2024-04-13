@@ -4,8 +4,10 @@ PHP : https://windows.php.net/download/
 composer : https://getcomposer.org/download/
 
 1.1 於專案根目錄執行 composer install
+
 1.2 於專案根目錄執行 copy .env.example .env
-1.3 於專案根目錄/public 執行 php -S localhost:8000  啟動伺服器.
+
+1.3 於專案根目錄/public 執行 php -S localhost:8000  啟動伺服器
 
 2.api路由 http://localhost:8000/calculator ，方法POST.
 

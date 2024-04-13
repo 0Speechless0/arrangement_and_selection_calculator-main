@@ -1,8 +1,11 @@
 # 說明文件
 必要安裝 : 
 PHP : https://windows.php.net/download/
+composer : https://getcomposer.org/download/
 
-1.於專案根目錄/public 執行 php -S localhost:8000  啟動伺服器.
+1.1 於專案根目錄執行 composer install
+1.2 於專案根目錄執行 copy .env.example .env
+1.3 於專案根目錄/public 執行 php -S localhost:8000  啟動伺服器.
 
 2.api路由 http://localhost:8000/calculator ，方法POST.
 
@@ -44,9 +47,9 @@ amounts: 格式為陣列，位置對應到表達式運算元位置，以階乘�
 
             當索引1的值為-k，即為Σ 10!/(8-k)!2! =10!/8!2! +  10!/(8-k)!2! + Σ 10!/(8-2k)!2!+ Σ 10!/(8-3k)!2! ...
             
-end : 如果 n為k的最大值，則 end = | n/k |，無條件進位
+end : 累加步數， 每步k比上一步大1，累加順序等同上述範例
 
-start: 前幾次不累加
+start: 前幾次不累加(目前最小為1)
 
 
     
